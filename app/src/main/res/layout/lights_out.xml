@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- GridLayout для 3x3 кнопок -->
+    <TextView
+        android:layout_width="121dp"
+        android:layout_height="58dp"
+        android:text="sdfsdfgfdgdfasgdf"
+        android:id="@+id/balance"/>
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+
+        <!-- Кнопки будут добавляться программно -->
+    </GridLayout>
+
+    <!-- Кнопка "Играть снова" (скрыта по умолчанию) -->
+    <Button
+        android:id="@+id/btn_play_again"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Играть снова"
+        android:visibility="gone"
+        android:onClick="onPlayAgainClicked" />
+
+    <!-- Кнопка "Выйти" (скрыта по умолчанию) -->
+    <Button
+        android:id="@+id/btn_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выйти"
+        android:visibility="gone"
+        android:onClick="closeFragment" />
+
+</LinearLayout>
